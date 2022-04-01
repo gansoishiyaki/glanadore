@@ -1,6 +1,11 @@
 using System.Collections.Generic;
 using YamlDotNet.Serialization;
 
+public class AAAA
+{
+
+}
+
 public class Card
 {
     public enum Type
