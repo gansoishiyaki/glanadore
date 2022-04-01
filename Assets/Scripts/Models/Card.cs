@@ -1,7 +1,5 @@
-using System.Collections;
 using System.Collections.Generic;
 using YamlDotNet.Serialization;
-using YamlDotNet.Serialization.NamingConventions;
 
 public class Card
 {

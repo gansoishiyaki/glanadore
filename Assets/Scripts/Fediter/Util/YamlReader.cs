@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 using YamlDotNet.Serialization;
 using YamlDotNet.Serialization.NamingConventions;
