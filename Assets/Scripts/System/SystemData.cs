@@ -1,13 +1,22 @@
 ﻿using System;
-using System.Collections.Generic;
 
 /// <summary>
-/// カードなど、参照したい
-/// システムデータが格納されている
+/// カードなど、参照したいシステムデータが格納されている
 /// </summary>
-public class SysyemData
+public class SystemData
 {
-    public List<Card> cards;
-    public User User;
-    public AAAA a;
+    /// <summary>
+    /// カード管理クラス
+    /// </summary>
+    public CardManager cardManager;
+
+    /// <summary>
+    /// イニシャライズ
+    /// データの初期設定など
+    /// </summary>
+    [Obsolete]
+    public SystemData()
+    {
+        cardManager = new CardManager();
+    }
 }

@@ -18,7 +18,14 @@ namespace Feditor.Util
         /// <param name="path"></param>
         /// <returns></returns>
         [Obsolete]
-        static private JSONClass getJsonData(string path)
+        static public JSONClass _GetJsonData(string path)
+        {
+            var json = Resources.Load(path) as TextAsset;
+            return (JSONClass)JsonUtility.FromJson(json.text, typeof(JSONClass));
+        }
+
+        [Obsolete]
+        static public JSONClass GetJsonData(string path)
         {
             var json = Resources.Load(path) as TextAsset;
             return (JSONClass)JsonUtility.FromJson(json.text, typeof(JSONClass));

@@ -5,7 +5,7 @@ using System.Linq;
 namespace Feditor.Util
 {
     [Serializable]
-    class JSONClass
+    public class JSONClass
     {
         public string key = "";
         public List<JSONTypeData> types = null;

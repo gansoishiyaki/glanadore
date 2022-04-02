@@ -1,11 +1,7 @@
 using System.Collections.Generic;
-using YamlDotNet.Serialization;
+using System;
 
-public class AAAA
-{
-
-}
-
+[Serializable]
 public class Card
 {
     public enum Type
@@ -13,7 +9,8 @@ public class Card
         Passive,
         Equipe,
         Skill,
-        Tool
+        Tool,
+        Item
     }
 
     public enum Attribute
@@ -33,12 +30,19 @@ public class Card
     public int dex;
     public int luck;
 
-    public List<Attribute> attributes;
-    public Type type;
-
-    // Deserialized
-    [YamlMember(Alias ="type")]
     public string _type;
-    [YamlMember(Alias = "attributes")]
-    public List<string> _attributes;
+    public List<string> attributes;
+
+    public Type type => (Type)Enum.Parse(typeof(Type), _type);
+
+    public bool HasAttribute(Attribute attribute)
+    {
+        return attributes.Contains(attribute.ToString());
+    }
+}
+
+[Serializable]
+public class CardSerializer
+{
+    public List<Card> cards;
 }
