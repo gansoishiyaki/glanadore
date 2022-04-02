@@ -8,7 +8,7 @@ public class SystemData
     /// <summary>
     /// カード管理クラス
     /// </summary>
-    public CardManager cardManager;
+    public CardController cardController;
 
     /// <summary>
     /// イニシャライズ
@@ -17,6 +17,6 @@ public class SystemData
     [Obsolete]
     public SystemData()
     {
-        cardManager = new CardManager();
+        cardController = new CardController();
     }
 }

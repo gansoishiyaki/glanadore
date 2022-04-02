@@ -6,7 +6,7 @@ using System.Linq;
 /// <summary>
 /// カードを管理するクラス
 /// </summary>
-public class CardManager
+public class CardController
 {
     /// <summary>
     /// カードリスト
@@ -17,10 +17,10 @@ public class CardManager
     /// コンストラクタ
     /// </summary>
     [Obsolete]
-    public CardManager()
+    public CardController()
     {
         cards = SetCards();
-        Debug.Log($"Success Read Card: {cards.Count}Types");
+        Debug.Log($"Success Load Card: {cards.Count} Count");
     }
 
     [Obsolete]

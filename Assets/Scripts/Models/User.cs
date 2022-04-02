@@ -1,20 +1,13 @@
-using System.Collections;
+﻿using System;
 using System.Collections.Generic;
 
+/// <summary>
+/// ユーザ
+/// </summary>
 public class User
 {
-    public string id;
-    public string name;
-    public List<string> cards;
-    public Card equip;
-
-    public int hp;
-    public int coin;
-
-    public int maxHP;
-    public int interigence;
-    public int str;
-    public int spd;
-    public int dex;
-    public int luck;
+    /// <summary>
+    /// 登録ユーザ
+    /// </summary>
+    public List<Player> players;
 }

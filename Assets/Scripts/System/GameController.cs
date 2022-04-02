@@ -26,6 +26,9 @@ public class GameController
         systemData = new SystemData();
     }
 
+    /// <summary>
+    /// ゲーム起動時に自動で呼ばれる
+    /// </summary>
     [RuntimeInitializeOnLoadMethod]
     static void OnRuntimeMethodLoad()
     {

@@ -4,12 +4,12 @@ using System;
 [Serializable]
 public class Card
 {
-    public enum Type
+    public enum CardType
     {
-        Passive,
+        None,
+        Union,
         Equipe,
         Skill,
-        Tool,
         Item
     }
 
@@ -30,17 +30,35 @@ public class Card
     public int dex;
     public int luck;
 
-    public string _type;
+    public string type;
     public List<string> attributes;
 
-    public Type type => (Type)Enum.Parse(typeof(Type), _type);
+    /// <summary>
+    /// カードタイプ
+    /// </summary>
+    public CardType Type
+    {
+        get
+        {
+            CardType res;
+            return Enum.TryParse(type, out res) ? res : CardType.None;
+        }
+    }
 
+    /// <summary>
+    /// その属性を持っているか
+    /// </summary>
+    /// <param name="attribute"></param>
+    /// <returns></returns>
     public bool HasAttribute(Attribute attribute)
     {
         return attributes.Contains(attribute.ToString());
     }
 }
 
+/// <summary>
+/// Jsonシリアライズ用
+/// </summary>
 [Serializable]
 public class CardSerializer
 {

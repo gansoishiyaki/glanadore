@@ -1,7 +1,6 @@
 ﻿cards:
 - id: visitor
   title: グラナドアを訪れしもの
-  _type: Passive
   description: テスト
   hp: 8
   str: 4
@@ -9,6 +8,8 @@
   spd: 4
   dex: 4
   luk: 4
+  attributes:
+    - passive
 
 - id: proof
   title: 探索者の証
@@ -17,7 +18,7 @@
 
 - id: ragulige
   title: ラグリージュ協会
-  _type: Passive
+  type: Union
   description: |-
     ここではカルマを積み共感を積むことが評価される。
     また、聖なる魔法を他の者たちよりうまく使いこなせるだろう。
@@ -38,4 +39,4 @@
   dex: 0
   luk: 6
   attributes:
-    - union
+    - passive
