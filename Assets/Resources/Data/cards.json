@@ -17,7 +17,7 @@
         {
             "id": "proof",
             "title": "探索者の証",
-            "_type": "Item",
+            "type": "Item",
             "description": "テスト"
         },
         {

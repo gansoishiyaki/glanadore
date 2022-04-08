@@ -21,7 +21,7 @@ public class GameController
     private GameController()
     {
         // 初期化処理
-        Screen.SetResolution(width: Const.GameMain.Witdh, height: Const.GameMain.Height, false, Const.GameMain.RefreshRate);
+        // Screen.SetResolution(width: Const.GameMain.Witdh, height: Const.GameMain.Height, false, Const.GameMain.RefreshRate);
 
         systemData = new SystemData();
     }

@@ -13,7 +13,7 @@
 
 - id: proof
   title: 探索者の証
-  _type: Item
+  type: Item
   description: テスト
 
 - id: ragulige
@@ -34,9 +34,7 @@
     その意味では、奴らはこのグラナドアの地において最も異常な者たちだと言えるだろう。
   hp: 9
   str: 2
-  int: 0
   spd: 2
-  dex: 0
   luk: 6
   attributes:
     - passive

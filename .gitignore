@@ -71,4 +71,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
+Assets/AssetDownload
+Assets/AssetDownload.meta
+
 .DS_Store
