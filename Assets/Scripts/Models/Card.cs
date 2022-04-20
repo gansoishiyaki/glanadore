@@ -4,18 +4,11 @@ using System;
 [Serializable]
 public class Card
 {
-    public enum CardType
-    {
-        None,
-        Union,
-        Equipe,
-        Skill,
-        Item
-    }
-
     public enum Attribute
     {
-        Union
+        union,
+        passive,
+        counter
     }
 
     public string id;
@@ -32,18 +25,6 @@ public class Card
 
     public string type;
     public List<string> attributes;
-
-    /// <summary>
-    /// カードタイプ
-    /// </summary>
-    public CardType Type
-    {
-        get
-        {
-            CardType res;
-            return Enum.TryParse(type, out res) ? res : CardType.None;
-        }
-    }
 
     /// <summary>
     /// その属性を持っているか

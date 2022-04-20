@@ -1,5 +1,6 @@
 ﻿cards:
 - id: visitor
+  icon: test
   title: グラナドアを訪れしもの
   description: テスト
   hp: 8
@@ -13,17 +14,15 @@
 
 - id: proof
   title: 探索者の証
-  type: Item
   description: テスト
 
 - id: ragulige
   title: ラグリージュ協会
-  type: Union
   description: |-
     ここではカルマを積み共感を積むことが評価される。
     また、聖なる魔法を他の者たちよりうまく使いこなせるだろう。
     ブルネイア騎士団とは時に共に戦う仲間となることもあるが、バールハイド連合軍とは常に敵対しているようだ。
-         
+
     <color=yellow>【グラナドア門番からの忠告】</color>
     腐敗した地にて信仰が果たす役割とは果たして何か？
     お前がその難題に挑むというのなら、この組織を選ぶと良いだろう。
@@ -37,4 +36,14 @@
   spd: 2
   luk: 6
   attributes:
+    - union
     - passive
+
+- id: avoid
+  title: 回避
+  description: |-
+    １ターンに一度のみ使用可能。
+    相手のDEXに対してSPDの対抗ロールを行う。
+    成功ならば相手の攻撃を回避する。
+  attributes:
+    - counter

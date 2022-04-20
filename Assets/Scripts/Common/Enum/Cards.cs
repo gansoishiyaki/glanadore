@@ -8,6 +8,7 @@ public enum CardNum
     bulneia,
     barlhide,
     revanoia,
+    avoid,
     blessed,
     city,
     nature,
